@@ -19,7 +19,7 @@
  * @package  app
  * @extends  Controller
  */
-class Controller_Welcome extends Controller
+class Controller_Original extends Controller
 {
 	/**
 	 * The basic welcome message
@@ -29,13 +29,13 @@ class Controller_Welcome extends Controller
 	 */
 	public function action_index()
 	{
-		return Response::forge(View::forge('welcome/index'));
-		// echo 'こんにちは';
+		// return Response::forge(View::forge('welcome/index'));
+		echo 'こんにちは';
 	}
-	public function action_night()
+	public function action_yap($num1, $num2)
 	{
 		// return Response::forge(View::forge('welcome/index'));
-		echo 'こんばんは';
+		echo $num1 + $num2;
 	}
 
 	/**
